@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "telegram-bot"
+version = "1.0.0"
+description = "A Telegram bot to answer frequently asked questions, support nested topics, and provide feedback functionality."
+authors = [
+    { name = "Roman", email = "atom58251@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["telegram", "bot", "FAQ", "python"]
+
+[project.dependencies]
+anyio = "4.7.0"
+certifi = "2024.12.14"
+et_xmlfile = "2.0.0"
+h11 = "0.14.0"
+httpcore = "1.0.7"
+httpx = "0.28.1"
+idna = "3.10"
+nest-asyncio = "1.6.0"
+numpy = "2.2.1"
+openpyxl = "3.1.5"
+pandas = "2.2.3"
+python-dateutil = "2.9.0.post0"
+python-dotenv = "1.0.1"
+python-telegram-bot = "21.10"
+pytz = "2024.2"
+six = "1.17.0"
+sniffio = "1.3.1"
+typing_extensions = "4.12.2"
+tzdata = "2024.2"
+
+[tool.setuptools.packages.find]
+where = ["src"]
